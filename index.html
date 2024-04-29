@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinetech</title>
@@ -8,29 +8,38 @@
     <link rel="stylesheet" href="Styles/style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Cinétech</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="index.html">Accueil</a>
-                  <a class="nav-link" href="film.html">Films</a>
-                  <a class="nav-link" href="serie.html">Séries</a>
-                </div>
-              </div>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Rechercher</button>
-              </form>
-              </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Cinétech</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html">Accueil</a>
+              <a class="nav-link" href="film.html">Films</a>
+              <a class="nav-link" href="serie.html">Séries</a>
+              <a class="nav-link" href="inscription.html">Inscription</a>
+              <a class="nav-link" href="connexion.html">Connexion</a>
             </div>
-        </nav>
-    </header>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          </div>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Rechercher</button>
+          </form>
+          </div>
+        </div>
+    </nav>
+</header>
+<main class="container">
+  <section>
+    <h1 class="text-center">Sélection de film</h1>
+    <div id="films" class="row justify-content-center"></div>
+  </section>
+</main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
