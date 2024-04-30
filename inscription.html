@@ -5,33 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinetech</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/styleformulaire.css">
 </head>
-<body>
-  <header>
+<body class="inscription">
+<header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Cinétech</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">Cinétech</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="index.html">Accueil</a>
-              <a class="nav-link" href="film.html">Films</a>
-              <a class="nav-link" href="serie.html">Séries</a>
-              <a class="nav-link" href="inscription.html">Inscription</a>
-              <a class="nav-link" href="connexion.html">Connexion</a>
+            <a class="nav-link" href="index.html">Accueil</a>
+            <a class="nav-link" href="film.html">Films</a>
+            <a class="nav-link" href="serie.html">Séries</a>
+            <a class="nav-link" href="inscription.html">Inscription</a>
+            <a class="nav-link" href="connexion.html">Connexion</a>
             </div>
-          </div>
-          <form class="d-flex">
+        </div>
+        <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
             <button class="btn btn-outline-light" type="submit">Rechercher</button>
-          </form>
-          </div>
+        </form>
+        </div>
         </div>
     </nav>
 </header>
+<main>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header text-center">Inscription</h5>
+                    <div class="card-body">
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="username">Nom d'utilisateur :</label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email :</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Mot de passe :</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm_password">Confirmer le mot de passe :</label>
+                                <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-block">S'inscrire</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

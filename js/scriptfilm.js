@@ -1,10 +1,10 @@
 const maConst = '8c4b867188ee47a1d4e40854b27391ec';
-const apiUrl = 'https://api.themoviedb.org/3/trending/all/day?language=fr-FR&api_key=' + maConst;
+const apiUrl = 'https://api.themoviedb.org/3/movie/popular?language=fr-FR&api_key=' + maConst;
 
 fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
-        const filmsContainer = document.getElementById('films');
+        const filmsContainer = document.getElementById('filmsPage');
 
         data.results.forEach(film => {
             const filmElement = document.createElement('div');

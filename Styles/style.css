@@ -26,4 +26,12 @@ body{
 h1{
     color: white;
 }
-  
+
+.card-title{
+    color: red;
+}
+
+.card-body{
+    background-color: #322C2B;
+    color: white;
+}

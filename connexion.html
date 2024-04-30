@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinetech</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/styleformulaire.css">
 </head>
 <body>
   <header>
@@ -32,6 +32,33 @@
         </div>
     </nav>
 </header>
+<main>
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+              <div class="card">
+                  <h5 class="card-header text-center">Connexion</h5>
+                  <div class="card-body">
+                      <form action="#" method="POST">
+                          <div class="form-group">
+                              <label for="email">Email :</label>
+                              <input type="email" class="form-control" id="email" name="email" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="password">Mot de passe :</label>
+                              <input type="password" class="form-control" id="password" name="password" required>
+                          </div>
+                          <button type="submit" class="btn btn-danger btn-block">Se connecter</button>
+                      </form>
+                  </div>
+                  <div class="card-footer text-danger text-center">
+                      <a href="#">Mot de passe oublié ?</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

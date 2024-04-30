@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+.card-footer{
+    color: red;
+}
